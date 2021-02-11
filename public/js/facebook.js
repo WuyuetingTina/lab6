@@ -22,6 +22,6 @@ function checkLoginState() {
     console.log('test successful')
     //Add code to change name and image 
     $('facebookLogin').hide();
-    $('#name').text(resonse.name);
+    $('#name').text(response.name);
     $('img#photo').attr("src", response.picture.data.url);
 }
