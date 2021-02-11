@@ -10,7 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$('.project a').click(addProjectDetails);
-
+	
 	// $('#colorBtn').click(randomizeColors);
 }
 
@@ -26,5 +26,16 @@ function addProjectDetails(e) {
 	// get rid of 'project' from the front of the id 'project3'
 	var idNumber = projectID.substr('project'.length);
 
+
 	console.log("User clicked on project " + idNumber);
+	console.log(e);
+	callback(idNumber);
+
+}
+
+
+function callback(result) {
+	console.log('.project #' + result + ' .details');
+	// $('#project' + result + ' .details').html('project' + result);
+
 }
